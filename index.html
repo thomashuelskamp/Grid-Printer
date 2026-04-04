@@ -457,7 +457,7 @@ function pad(n, digits) {
 
 function buildPageTable(codes, idh, spech, fs) {
   const COLS = 8;
-  const COL_WIDTHS = [18, 22, 22, 22, 22, 22, 22, 18]; // mm per column
+  const COL_WIDTHS = [18, 21.5, 21.5, 21.5, 21.5, 21.5, 21.5, 18]; // mm per column
   const chunks = [];
   for (let i = 0; i < codes.length; i += COLS) {
     chunks.push(codes.slice(i, i + COLS));
@@ -494,7 +494,7 @@ function buildPageTable(codes, idh, spech, fs) {
 function buildGrid() {
   const idx    = parseInt(sel.value);
   const prefix = COUNTRIES[idx].code;
-  const COL_WIDTHS = [18, 22, 22, 22, 22, 22, 22, 18];
+  const COL_WIDTHS = [18, 21.5, 21.5, 21.5, 21.5, 21.5, 21.5, 18];
   const idh    = 5;
   const spech  = 18;
   const fs     = parseInt(document.getElementById('fs').value) || 11;
